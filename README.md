@@ -1,5 +1,5 @@
 # onnx-wheels
-To generate wheels for ONNX and ONNX Runtime which can be installed on ARM architectures, we will use Docker’s buildx functionality which enables building Docker images that work on multiple CPU architectures.
+To generate wheels for ONNX (v1.11.0) and ONNX Runtime (v1.11.0) which can be installed on ARM architectures, we will use Docker’s buildx functionality which enables building Docker images that work on multiple CPU architectures.
 
 Docker buildx multi-architecture support can make use of either native builder nodes running on different architectures or the QEMU processor emulator. QEMU works by simulating all instructions of a foreign CPU instruction set on the host processor. Linux also has built-in support for running non-native binaries, called binfmt_misc which allows arbitrary executable file formats to be recognized and passed to such emulators.
 
