@@ -43,7 +43,7 @@ RUN sudo make install
 
 # BUILD PROTOBUF
 WORKDIR /code
-RUN git clone --single-branch --branch v3.16.0 --recursive https://github.com/protocolbuffers/protobuf protobuf
+RUN git clone --single-branch --branch v3.19.0 --recursive https://github.com/protocolbuffers/protobuf protobuf
 WORKDIR /code/protobuf
 RUN cmake cmake -Dprotobuf_BUILD_SHARED_LIBS=OFF -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_POSITION_INDEPENDENT_CODE=ON -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release
 RUN make -j`nproc` && \
