@@ -82,13 +82,15 @@ onnx-1.11.0-cp38-cp38m-linux_aarch64.whl
 onnxruntime-1.11.0-cp38-cp38m-linux_aarch64.whl
 ```
 # Test wheels
-To test the wheels on ARM32 architecture, launch a Docker instance using the following command and install the desired wheels:
+To test the Python 3.7 wheels on ARM32 architecture, launch a Docker instance using the following command and install the `onnx-1.11.0-cp37-cp37m-linux_armv7l.whl` and `onnxruntime-1.11.0-cp37-cp37m-linux_armv7l.whl` wheels:
 ```
 docker run --platform linux/arm -it --rm balenalib/raspberrypi3-python:3.7-build /bin/bash
 ```
+Use `balenalib/raspberrypi3-python:3.8-build` and `balenalib/raspberrypi3-python:3.9-build` images to test Python 3.8 and 3.9 wheels respectively.
 
-To test the wheels on ARM64 architecture, launch a Docker instance using the either one of following commands and install the desired wheels:
+To test the Python 3.7 wheels on ARM64 architecture, launch a Docker instance using the either one of following commands and install the `onnx-1.11.0-cp37-cp37m-linux_aarch64.whl` and `onnxruntime-1.11.0-cp37-cp37m-linux_aarch64.whl` wheels:
 ```
 docker run --platform linux/arm64 -it --rm balenalib/raspberrypi4-64-python:3.7-build /bin/bash
 docker run --platform linux/arm64 -it --rm balenalib/aarch64-ubuntu-python:3.7-focal-build /bin/bash
 ```
+Use `balenalib/raspberrypi4-64-python:3.8-build` and `balenalib/raspberrypi4-64-python:3.9-build` images to test Python 3.8 and 3.9 wheels respectively.
